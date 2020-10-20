@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const MenuStyle = styled.nav`
+export const MenuStyle = styled.header`
   width: 100vw;
   height: 60px;
   display: flex;
@@ -77,7 +77,44 @@ export const Botao = styled.div`
 `;
 
 export const Modal = styled.div`
+  position: absolute;
   width: 100vw;
   height: 100vh;
+  opacity: ${(props) => (props.MenuState ? '1' : '0')};
+  visibility: ${(props) => (props.MenuState ? 'visible' : 'hidden')};
   background: rgba(36, 41, 67, 0.9);
+  transition: 0.6s ease;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Lista = styled.ul`
+  width: 90%;
+  max-width: 400px;
+`;
+
+export const Item = styled.li`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 3px;
+
+  :nth-child(1),
+  :nth-child(2),
+  :nth-child(3) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  :hover {
+    color: #9bf1ff;
+  }
 `;

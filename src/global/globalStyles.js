@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 body{
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
+  overflow: hidden;
 }
 
 
@@ -41,6 +42,11 @@ ul, li, a, span, strong {
   text-decoration: none;
   list-style: none;
   font-size: 1rem;
+
+
+  @media (max-width: 500px){
+    font-size: .7rem;
+  }
 }
 
 a, span, strong {
