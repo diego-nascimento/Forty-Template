@@ -1,11 +1,20 @@
 import React from 'react';
 import { MenuStyle, BotaoMenu, Botao, Modal, Lista, Item } from './Menu.style';
 import { FiX } from 'react-icons/fi';
-import WhiteButton from '../WhiteButton/WhiteButton';
-import ColorButton from '../ColorButton/ColorButton';
+import Button from '../Button/Button';
 
-export default function Menu() {
+const Menu = () => {
   const [MenuState, setMenuState] = React.useState(0);
+  const [HeaderState, setHeaderState] = React.useState(0);
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) {
+        setHeaderState(1);
+      } else {
+        setHeaderState(0);
+      }
+    });
+  });
 
   return (
     <>
@@ -29,16 +38,16 @@ export default function Menu() {
               <Item>Generic</Item>
               <Item>Elements</Item>
               <Item>
-                <ColorButton>Login</ColorButton>
+                <Button Color={1}>Login</Button>
               </Item>
               <Item>
-                <WhiteButton>Get Started</WhiteButton>
+                <Button Color={0}>Get Started</Button>
               </Item>
             </Lista>
           </>
         ) : null}
       </Modal>
-      <MenuStyle>
+      <MenuStyle HeaderState={HeaderState}>
         <a href="">
           <strong>Forty</strong>
           <span> BY DIEGO</span>
@@ -54,4 +63,6 @@ export default function Menu() {
       </MenuStyle>
     </>
   );
-}
+};
+
+export default Menu;

@@ -1,5 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
+const AnimationMenu = keyframes`
+0%{
+  transform: translateY(-60px);
+  }20%{
+    transform: translateY(0px);
+  }
+`;
+
 export const MenuStyle = styled.header`
   width: 100vw;
   height: 60px;
@@ -7,8 +15,18 @@ export const MenuStyle = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: black;
-  padding: 0px 20px;
+  padding: 0px 5%;
+  position: ${(props) => (props.HeaderState == 0 ? 'absolute' : 'fixed')};
+  background: ${(props) =>
+    props.HeaderState == 1 ? '#302c4c' : 'rgba(1, 1, 1, 0)'};
+  z-index: 98;
+  top: 0;
+  animation: ${(props) => (props.HeaderState == 1 ? AnimationMenu : 'none')} 2s
+    forwards;
+
+  @media (max-width: 800px) {
+    padding: 0px 5%;
+  }
 
   a {
     display: flex;
@@ -77,17 +95,18 @@ export const Botao = styled.div`
 `;
 
 export const Modal = styled.div`
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   opacity: ${(props) => (props.MenuState ? '1' : '0')};
   visibility: ${(props) => (props.MenuState ? 'visible' : 'hidden')};
-  background: rgba(36, 41, 67, 0.9);
+  background: rgba(36, 41, 67, 0.98);
   transition: 0.6s ease;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99;
 `;
 
 export const Lista = styled.ul`

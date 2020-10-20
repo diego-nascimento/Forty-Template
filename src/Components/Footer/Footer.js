@@ -1,6 +1,12 @@
 import React from 'react';
-import { FooterStyle } from 'styled-components';
+import { FooterStyle, Lista, Item } from './Footer.style';
 
 export default function Footer() {
-  return <div></div>;
+  return (
+    <FooterStyle>
+      <Lista>
+        <Item></Item>
+      </Lista>
+    </FooterStyle>
+  );
 }

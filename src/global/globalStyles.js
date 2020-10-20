@@ -13,6 +13,8 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   overflow: hidden;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 
@@ -22,7 +24,8 @@ body{
 
 .highSize{
   width: 100%;
-  max-width: 1500px
+  max-width: 1600px;
+  padding: 0px 20px;
 }
 
 .minSize{
@@ -36,16 +39,17 @@ body{
   display: flex;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 ul, li, a, span, strong {
   text-decoration: none;
   list-style: none;
-  font-size: 1rem;
+  font-size: 1em;
 
 
   @media (max-width: 500px){
-    font-size: .7rem;
+    font-size: .8em;
   }
 }
 
@@ -56,7 +60,6 @@ a, span, strong {
 span{
   font-weight: 700;
 }
-
 
 
 `;
