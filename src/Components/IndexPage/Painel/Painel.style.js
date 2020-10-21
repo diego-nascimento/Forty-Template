@@ -15,6 +15,7 @@ export const Container = styled.section`
   @media (max-width: 750px) {
     height: 500px;
   }
+
   :after {
     content: '';
     position: absolute;

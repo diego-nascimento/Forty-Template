@@ -2,20 +2,12 @@ import React from 'react';
 import { MenuStyle, BotaoMenu, Botao, Modal, Lista, Item } from './Menu.style';
 import { FiX } from 'react-icons/fi';
 import Button from '../Button/Button';
+import { GlobalContext } from '../../GlobalContext/Context';
 
 const Menu = () => {
   const [MenuState, setMenuState] = React.useState(0);
-  const [HeaderState, setHeaderState] = React.useState(0);
 
-  React.useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 600) {
-        setHeaderState(1);
-      } else {
-        setHeaderState(0);
-      }
-    });
-  });
+  const Global = React.useContext(GlobalContext);
 
   return (
     <>
@@ -48,7 +40,7 @@ const Menu = () => {
           </>
         ) : null}
       </Modal>
-      <MenuStyle HeaderState={HeaderState}>
+      <MenuStyle HeaderState={Global.MenuPosition}>
         <a href="">
           <strong>Forty</strong>
           <span> BY DIEGO</span>

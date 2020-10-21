@@ -2,13 +2,27 @@ import React from 'react';
 import { Container, Letreiro } from './Painel.style';
 import Button from '../../Button/Button';
 import { BsArrowRight } from 'react-icons/bs';
+import { GlobalContext } from '../../../GlobalContext/Context';
 
 export default function Painel() {
+  const Menuref = React.useRef();
+  const global = React.useContext(GlobalContext);
+
+  React.useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (Menuref.current.getBoundingClientRect().bottom <= 0) {
+        global.setheaderState(1);
+      } else {
+        global.setheaderState(0);
+      }
+    });
+  });
+
   return (
-    <Container>
+    <Container ref={Menuref}>
       <Letreiro className="highSize">
         <div className="Titulo">
-          <h1>Hi, My Name is Forty</h1>
+          <h1>Forty, Third, Second</h1>
         </div>
         <div className="Subtitulo">
           <p>
