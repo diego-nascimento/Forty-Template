@@ -35,7 +35,7 @@ export default function Contato() {
             <Botao Color="1" Size={'300px'}>
               send message
             </Botao>
-            <Botao Size={'150px'}> Clear</Botao>
+            <Botao Size={'150px'}>Clear</Botao>
           </div>
         </Formulario>
         <Lista>
@@ -59,7 +59,7 @@ export default function Contato() {
           </Item>
           <Item>
             <div className="Icon">
-              <FaPhone />
+              <AiFillHome />
             </div>
             <div className="Content">
               <h3>Address</h3>
