@@ -35,7 +35,7 @@ export const Letreiro = styled.div`
   align-items: center;
   color: white;
 
-  @media(max-width: 800px){
+  @media (max-width: 800px) {
     width: 90%;
   }
 
@@ -46,22 +46,7 @@ export const Letreiro = styled.div`
     border-bottom: 2px solid white;
 
     h1 {
-      font-size: 4rem;
-
-      @media(max-width: 1200px){
-        font-size: 3.5em;
-      }
-      @media(max-width: 700px){
-        font-size: 2.5em;
-      }
-
-      @media(max-width: 500px){
-        font-size: 2em;
-      }
-
-      @media(max-width: 370px){
-        font-size: 1.5em;
-      }
+      font-size: 2em;
     }
   }
 
@@ -70,37 +55,25 @@ export const Letreiro = styled.div`
     padding: 30px 0px;
     display: flex;
     flex-direction: row;
-    
-    @media(max-width: 700px){
-        flex-direction: column; 
-      }
 
+    @media (max-width: 700px) {
+      flex-direction: column;
     }
-    p {
-      font-size: 1.1em;
-      font-weight: 700;
-      letter-spacing: 2px;
-      line-height: 1.8rem;
-      margin-right: 5px;
-      width: 35%;
+  }
+  p {
+    font-size: 0.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 2em;
+    margin-right: 2vw;
+    width: 35%;
 
-      @media(max-width: 1250px){
-        font-size: 1em;
-        width: 100%;
-      }
-      @media(max-width: 750px){
-        font-size: .9em;
-        width: 100%;
-        margin: 0 0 20px 0;
-      }
-
-      @media(max-width: 500px){
-        font-size: .8em;
-      }
-
-      @media(max-width: 370px){
-        font-size: .7em;
-      }
+    @media (max-width: 1250px) {
+      width: 100%;
+    }
+    @media (max-width: 750px) {
+      width: 100%;
+      margin: 0 0 20px 0;
     }
   }
 `;

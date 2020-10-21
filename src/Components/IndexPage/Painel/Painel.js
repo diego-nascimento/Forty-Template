@@ -20,7 +20,7 @@ export default function Painel() {
             <BsArrowRight
               style={{
                 fontSize: '80px',
-                height: '50px',
+                height: '30px',
               }}
             />
           </Button>

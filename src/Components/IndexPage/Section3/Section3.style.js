@@ -16,24 +16,16 @@ export const Content = styled.div`
   h2 {
     padding: 1% 0px;
     border-bottom: 3px solid white;
-    font-size: 2em;
+    font-size: 0.8em;
     position: relative;
     width: 200px;
-
-    @media (max-width: 800px) {
-      font-size: 1.2em;
-    }
   }
 
   p {
     padding: 2% 0px 2% 0px;
-    font-size: 1em;
+    font-size: 0.5em;
     line-height: 1.6em;
     letter-spacing: 2px;
     font-weight: 400;
-
-    @media (max-width: 800px) {
-      font-size: 0.7em;
-    }
   }
 `;

@@ -9,6 +9,10 @@ export const GlobalStyles = createGlobalStyle`
   
 }
 
+html{
+  font-size: calc(1em + 1vw);
+}
+
 body{
   font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
@@ -45,21 +49,14 @@ body{
 ul, li, a, span, strong {
   text-decoration: none;
   list-style: none;
-  font-size: 1em;
-
-
-  @media (max-width: 500px){
-    font-size: .8em;
-  }
+  font-size: .7em;
 }
 
 a, span, strong {
-  letter-spacing: 3px;
+  letter-spacing: .3em;
   color: white;
 }
 span{
   font-weight: 700;
 }
-
-
 `;

@@ -21,7 +21,7 @@ export default function Section3() {
           <BsArrowRight
             style={{
               fontSize: '80px',
-              height: '50px',
+              height: '30px',
             }}
           />
         </Button>

@@ -1,8 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 
 const AnimationMenu = keyframes`
-0%{
-  transform: translateY(-60px);
+  0%{
+    transform: translateY(-60px);
   }20%{
     transform: translateY(0px);
   }
@@ -15,7 +15,7 @@ export const MenuStyle = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 5%;
+  padding: 0px 2vw;
   position: ${(props) => (props.HeaderState == 0 ? 'absolute' : 'fixed')};
   background: ${(props) =>
     props.HeaderState == 1 ? '#302c4c' : 'rgba(1, 1, 1, 0)'};
@@ -25,7 +25,7 @@ export const MenuStyle = styled.header`
     forwards;
 
   @media (max-width: 800px) {
-    padding: 0px 5%;
+    padding: 0px 7vw;
   }
 
   a {
@@ -49,7 +49,7 @@ export const MenuStyle = styled.header`
   }
 
   strong {
-    padding: 0.5rem 2rem;
+    padding: 0.5vw 2vw;
     background: white;
     color: #242943;
     transition: 0.3s;
@@ -122,7 +122,7 @@ export const Item = styled.li`
   flex-direction: column;
   margin-top: 10px;
   padding: 10px 20px;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   color: white;
   cursor: pointer;
   letter-spacing: 3px;

@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 const Menu = () => {
   const [MenuState, setMenuState] = React.useState(0);
   const [HeaderState, setHeaderState] = React.useState(0);
+
   React.useEffect(() => {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 600) {

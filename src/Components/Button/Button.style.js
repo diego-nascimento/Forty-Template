@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const ButtonStyle = styled.button`
   color: ${(props) => (props.Color == '1' ? 'black' : 'white')};
   background: ${(props) => (props.Color == '1' ? 'white' : 'rgba(1,1,1, 0)')};
-  font-size: 1em;
-  padding: 0px 1rem;
+  font-size: 0.7em;
+  padding: 0px 1vw;
   height: 3em;
   cursor: pointer;
   transition: 0.2s;

@@ -38,28 +38,20 @@ export const Letreiro = styled.div`
   opacity: 1;
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 1em;
     padding-bottom: 2%;
     text-transform: capitalize;
     opacity: 1;
     z-index: 95;
-
-    @media (max-width: 800px) {
-      font-size: 1.5rem;
-    }
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 0.5em;
     letter-spacing: 3px;
     padding-top: 2%;
     border-top: 2px solid white;
     text-transform: upperCase;
     opacity: 1;
     z-index: 95;
-
-    @media (max-width: 800px) {
-      font-size: 0.7rem;
-    }
   }
 `;
