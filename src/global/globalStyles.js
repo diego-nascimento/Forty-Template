@@ -28,7 +28,7 @@ body{
 
 .highSize{
   width: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   padding: 0px 20px;
 }
 
