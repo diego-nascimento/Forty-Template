@@ -18,7 +18,7 @@ export const MenuStyle = styled.header`
   padding: 0px 2vw;
   position: ${(props) => (props.HeaderState == 0 ? 'absolute' : 'fixed')};
   background: ${(props) =>
-    props.HeaderState == 1 ? '#302c4c' : 'rgba(1, 1, 1, 0)'};
+    props.HeaderState == 1 ? 'rgb(42, 47, 74)' : 'rgba(1, 1, 1, 0)'};
   z-index: 98;
   top: 0;
   animation: ${(props) => (props.HeaderState == 1 ? AnimationMenu : 'none')} 2s

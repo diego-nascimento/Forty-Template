@@ -2,6 +2,8 @@ import Layout from '../Components/Layout/layout';
 import Painel from '../Components/IndexPage/Painel/Painel';
 import Section from '../Components/IndexPage/SectionDivide/SectionDivide';
 import Section3 from '../Components/IndexPage/Section3/Section3';
+import Contato from '../Components/IndexPage/Contato/Contato';
+
 export default function Home() {
   return (
     <Layout>
@@ -40,6 +42,7 @@ export default function Home() {
         Subtexto2="slightly believable."
       />
       <Section3 />
+      <Contato />
     </Layout>
   );
 }

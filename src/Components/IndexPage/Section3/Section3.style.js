@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100vw;
-  background: #302c4c;
+  background: rgb(42, 47, 74);
   padding: 5% 0;
   display: flex;
   justify-content: center;

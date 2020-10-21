@@ -49,7 +49,11 @@ body{
 ul, li, a, span, strong {
   text-decoration: none;
   list-style: none;
-  font-size: .7em;
+  font-size: .6em;
+
+  @media(max-width: 800px){
+    font-size: .8em;
+  }
 }
 
 a, span, strong {
