@@ -6,7 +6,7 @@ import Contato from '../Components/IndexPage/Contato/Contato';
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout Title="Home">
       <Painel />
       <Section
         State={1}
