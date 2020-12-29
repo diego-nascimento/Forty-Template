@@ -9,7 +9,7 @@ const AnimationMenu = keyframes`
 `;
 
 export const MenuStyle = styled.header`
-  width: 100vw;
+  width: 100%;
   height: 60px;
   display: flex;
   flex-direction: row;
