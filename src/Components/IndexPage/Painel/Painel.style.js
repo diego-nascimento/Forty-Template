@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  width: 100vw;
+  width: 100%;
   height: 600px;
   background-image: url('painel.jpg');
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@ export const Letreiro = styled.div`
   color: white;
 
   @media (max-width: 800px) {
-    width: 90%;
+    
   }
 
   .Titulo {
